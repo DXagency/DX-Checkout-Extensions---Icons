@@ -1,0 +1,49 @@
+type = "checkout_ui_extension"
+name = "Icons"
+
+extension_points = [
+  'Checkout::Dynamic::Render'
+]
+
+# [[metafields]]
+# namespace = "my-namespace"
+# key = "my-key"
+
+# [[metafields]]
+# namespace = "my-namespace"
+# key = "my-key-2"
+
+# Read more on extension settings at https://shopify.dev/api/checkout-extensions/checkout/configuration
+[settings]
+  [[settings.fields]]
+  key = "icon_1"
+  type = "single_line_text_field"
+  name = "Icon 1 URL"
+  description = "Enter the ICON 1 URL"
+  [[settings.fields]]
+  key = "copy_1"
+  type = "multi_line_text_field"
+  name = "Icon 1 Copy"
+  description = "Enter the copy for ICON 1"
+
+  [[settings.fields]]
+  key = "icon_2"
+  type = "single_line_text_field"
+  name = "Icon 2 URL"
+  description = "Enter the ICON 2 URL"
+  [[settings.fields]]
+  key = "copy_2"
+  type = "multi_line_text_field"
+  name = "Icon 2 Copy"
+  description = "Enter the copy for ICON 2"
+
+  [[settings.fields]]
+  key = "icon_3"
+  type = "single_line_text_field"
+  name = "Icon 3 URL"
+  description = "Enter the ICON 3 URL"
+  [[settings.fields]]
+  key = "copy_3"
+  type = "multi_line_text_field"
+  name = "Icon 3 Copy"
+  description = "Enter the copy for ICON 3"
